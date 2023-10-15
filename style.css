@@ -5,16 +5,16 @@
     box-sizing: border-box;
 }
 :root {
-    --dark-blue: #14007a;
-    --blue: #1a009c;
+    --dark-blue: rgba(14, 84, 225, 0.3);
+    --blue: #30065a;
     --light-blue: rgb(74, 225, 255);
-    --pink: rgb(255, 40, 113);
+    --pink: rgb(242, 231, 235);
 }
 
 body {
     height: 100vh;
     font-family: sans-serif;
-    background-image: linear-gradient(45deg,var(--light-blue), var(--blue));
+    background-image: linear-gradient(rgba(40, 52, 84, 0.115),rgba(15, 46, 82, 0.416)),url(wall.jpeg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,23 +25,25 @@ body {
     height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #fff;
-    border-radius: 1rem;
+    
+    border-radius: 10px;
     overflow: hidden;
-    border: 1px solid var(--dark-blue);
+    border: 1px solid ;
 }
 
 .code {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     overflow-y: auto;
-    background-color: var(--dark-blue);
+    background-color: rgba(0, 6, 7, 0.54);
     padding: 1rem;
     border-radius: 0 1rem 1rem 0;
+    border: 2.5px solid rgb(9, 198, 132);
 }
 
 h1 {
-    font: 600 1.2rem sans-serif;
+
+    font: 650 1.2rem sans-serif;
     margin: 1rem 0;
     color: #fff;
 }
@@ -55,9 +57,13 @@ h1 > img {
 .code textarea {
     width: 100%;
     height: calc(100% - 4rem);
-    background-color: var(--blue);
+   
     color: var(--light-blue);
-    border: none;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    border-color: lightblue;
+    outline: none;
+    background: rgba(4, 4, 6, 0.595);
     padding: 1rem;
     font-size: 1.1rem;
     resize: vertical;
@@ -68,7 +74,7 @@ h1 > img {
     
 }
 .code textarea::-webkit-scrollbar-thumb {
-    background-color: var(--pink);
+    background-color: var(--light-blue);
     border-radius: .4rem;
 }
 ::placeholder{
@@ -79,11 +85,13 @@ h1 > img {
     width: 100%;
     height: 100%;
     border: none;
+    background-color: white;
+    border-radius: 10px;
 }
 
 a {
-    background-color: lime;
-    color: #fff;
+   
+    color: #ffffff;
     padding: 0 1.2rem;
     border-radius: .5rem;
     text-decoration: none;
